@@ -89,10 +89,12 @@ if (isSupported) {
 let socket = new WebSocket("ws://172.20.10.8:3000");
 
 socket.onopen = function(e) {
-  alert("[open] Соединение установлено");
+  //alert("[open] Соединение установлено");
+  document.body.style.backgroundColor = 'green'
   socket.close();
 };
 
 socket.onerror = function(error) {
-  alert(`[error]`);
+  //alert(`[error]`);
+  document.body.style.backgroundColor = 'red'
 };
