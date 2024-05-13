@@ -84,3 +84,15 @@ if (isSupported) {
   });
 
 } // isSupported
+
+/////////////////////////
+let socket = new WebSocket("ws://172.20.10.8:3000");
+
+socket.onopen = function(e) {
+  alert("[open] Соединение установлено");
+  socket.close();
+};
+
+socket.onerror = function(error) {
+  alert(`[error]`);
+};
