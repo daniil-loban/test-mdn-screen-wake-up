@@ -86,7 +86,7 @@ if (isSupported) {
 } // isSupported
 
 /////////////////////////
-let socket = new WebSocket("ws://172.20.10.8:3000");
+let socket = new WebSocket("wss://172.20.10.8:3000");
 
 socket.onopen = function(e) {
   //alert("[open] Соединение установлено");
